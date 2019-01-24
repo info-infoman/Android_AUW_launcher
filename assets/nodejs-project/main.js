@@ -1,53 +1,48 @@
 const path = require('path');
-const chokidar = require('chokidar');
 //test change file
-var schedule = require('node-schedule');
 var replace = require("replace");
 
-var databaseUrl = __dirname+"/db/clients.db";
+//var blocks = __dirname+"/db/blocks.db";
+
 var Datastore = require('nedb');
 db = {};
-db.clients = new Datastore({ filename: databaseUrl, autoload: true });
+db.blocks = new Datastore({ filename: __dirname+'/db/blocks', autoload: true });
+db.txs = new Datastore({ filename: __dirname+'/db/txs', autoload: true });
+db.trie = new Datastore({ filename: __dirname+'/db/trie', autoload: true });
+db.peers = new Datastore({ filename: __dirname+'/db/peers', autoload: true });
+
+
 
 const state = {
-  server: null,
+  full_node: null,
   sockets: [],
 };
 
 function start() {
-  console.log('restart');
-  state.server = require('./server')().listen(3000, () => {
+  state.full_node = require('./full_node')().listen(3000, () => {
     console.log('Started on 3000');
   });
-  state.server.on('connection', (socket) => {
+  state.full_node.on('connection', (socket) => {
     console.log('Add socket', state.sockets.length + 1);
     state.sockets.push(socket);
   });
 
-  schedule.scheduleJob(new Date().getTime()+(10*1000), async function(){
-    console.log('ch file');
 
-    var text="console.log('ok, script self updated');";
+//    replace({
+//        regex: "//test String//",
+//        replacement: text,
+//        paths: [__dirname+'/routes/clients.js'],
+//        recursive: true,
+//        silent: true,
+//    });
 
-    replace({
-        regex: "//test String//",
-        replacement: text,
-        paths: [__dirname+'/routes/clients.js'],
-        recursive: true,
-        silent: true,
-    });
-
-    restart();
-
-
-  });
+//    restart();
 
 }
 
 function pathCheck(id) {
   return (
-    id.startsWith(path.join(__dirname, 'routes')) ||
-    id.startsWith(path.join(__dirname, 'server.js'))
+    id.startsWith(path.join(__dirname, 'full_node.js'))
   );
 }
 
@@ -69,11 +64,9 @@ function restart() {
 
   state.sockets = [];
 
-  state.server.close(() => {
-    console.log('Server is closed');
-    console.log('\n----------------- restarting -------------');
+  console.log('\n----------------- restarting -------------');
     start();
-  });
+
 }
 
 start();
