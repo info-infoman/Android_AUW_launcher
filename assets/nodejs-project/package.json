@@ -1,7 +1,7 @@
 {
-  "name": "JSGridExpressJSSample",
+  "name": "FFNMW",
   "version": "1.0.0",
-  "description": "Sample project for jsGrid with Node.js Express REST service",
+  "description": "First full node mobile wallet",
   "private": true,
   "scripts": {
     "start": "node main.js"
