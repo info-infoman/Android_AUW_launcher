@@ -13,3 +13,10 @@
 7) In Android Studio import the android/native-gradle/ gradle project. It will automatically check for dependencies and prompt you to install missing requirements (i.e. you may need to update the Android SDK build tools to the required version (25.0.3) and install CMake to compile the C++ file that bridges Java to the Node.js on Mobile library).
 8) set in build.gradle classpath 'com.android.tools.build:gradle:3.2.1'
 9) After the gradle build completes, run the app on a compatible device.
+
+we need module(work plan):
+bitcoin-net for connect to peer https://github.com/mappum/bitcoin-net and add some rule for xcn
+blockchain-download  for load blockhead abd full blocks(for xcn last 10k) https://github.com/mappum/blockchain-download and add some rule for xcn
+blockchain-spv for check and load block to db https://github.com/mappum/blockchain-spv add some rule for xcn witch full blocks(for xcn last 10k)
+
+
