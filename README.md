@@ -24,6 +24,6 @@ we need module(work plan):
 
 
 All points need to check for autorestart witch scheme stop-remove require-close socket-start
-![](https://github.com/info-infoman/Android_AUW_launcher/unknown.png)
+![Android_AUW_launcher](https://github.com/info-infoman/Android_AUW_launcher/blob/master/unknown.png?raw=true)
 
 
