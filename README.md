@@ -18,5 +18,12 @@ we need module(work plan):
 1) bitcoin-net for connect to peer https://github.com/mappum/bitcoin-net and add some rule for xcn
 2) blockchain-download  for load blockhead abd full blocks(for xcn last 10k) https://github.com/mappum/blockchain-download and add some rule for xcn
 3) blockchain-spv for check and load block to db https://github.com/mappum/blockchain-spv add some rule for xcn witch full blocks(for xcn last 10k)
+4) bitcoin-inventory for exchange tx https://github.com/mappum/bitcoin-inventory
+5) bitcoin-merkle-proof https://github.com/mappum/bitcoin-merkle-proof and create xcn-trie-proof
+6) add express server for local web-wallet 
+
+
+All points need to check for autorestart witch scheme stop-remove require-close socket-start
+![](https://github.com/info-infoman/Android_AUW_launcher/unknown.png)
 
 
