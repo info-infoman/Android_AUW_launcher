@@ -17,6 +17,7 @@ This means that we must move the activation date of auto-update beyond the 10,00
 
 # Easy launcher to start the application - android_NodeJS_naive_autoupdate_XCN-like_Launcher
 This is an application for android whose task is to start the NodeJS process in a folder, then the application in this folder works on the basis of its internal logic. 
+
 0) install android studio
 1) load https://github.com/janeasystems/nodejs-mobile-samples/tree/master/android/native-gradle-node-folder and go to android/native-gradle-node-folder/
 2) Copy file from this repo to android/native-gradle-node-folder/app/src/main
