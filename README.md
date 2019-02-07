@@ -52,3 +52,12 @@ All we can do is stop loops, close sockets, update files and require cache.
 6) add express server for local web-wallet 
 
 All points need to check for autorestart witch scheme stop-remove require-close socket-start
+
+# A look into the future:
+So, let's say we have a mobile self-updating polymorphic application for cryptocurrency, since this application is based on XCN-like algorithms, then it can fairly work in the FeedBackCoin algorithm, what will it give us?
+
+The FeedBackCoin algorithm has a super transaction mechanism, it is ready and working, and even passed some tests, and so, this mechanism allows transactions to sense the outside world without intermediaries, which means that we can produce an equivalent and non-equivalent information exchange between these super transactions which related - blockchains (exchange coins). 
+
+And now the most important thing: having a mechanism for voting for the structure of the application, and a system for exchanging information between related blockchains through the mechanism of supertransactions, what prevents us from solving the problem of blockchain scaling through creating parallel independent related mini-blockchains in one application? Imagine a system where there is a main blockchain in which pictures of automatic updates are approved and parallel addition of new parallel independent blockchains that carry other information but also act on the same algorithm as the main blockchain (except for the auto-update policy).
+
+All this will allow the community of the main blockchain to vote directly, not only for the update but also for expanding the bandwidth by adding parallel blockchains. At the same time, the mechanism of super transactions will allow ordinary users to make equal micro-exchanges between blockchains inside their wallet automatically, automatically add new blockchains to it and not even notice that all this. The end user will simply see the amount of coins in his wallet and not suspect that they are in different blockchains. Naturally, for this, the internal exchange mechanism between parallel blockchains should have a tough pricing policy where the price of coins is determined by the ratio of the generated coins between the blockchains.
