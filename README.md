@@ -50,6 +50,7 @@ All we can do is stop loops, close sockets, update files and require cache.
 4) bitcoin-inventory for exchange tx https://github.com/mappum/bitcoin-inventory
 5) bitcoin-merkle-proof https://github.com/mappum/bitcoin-merkle-proof and create xcn-trie-proof
 6) add express server for local web-wallet 
+7) https://github.com/jzwood/meowvc - need test simle VCS for NodeJS
 
 All points need to check for autorestart witch scheme stop-remove require-close socket-start
 
