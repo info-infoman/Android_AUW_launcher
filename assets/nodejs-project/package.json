@@ -16,7 +16,8 @@
     "nedb": "^1.1.2",
     "path": "^0.12.7",
     "replace": "^1.0.1",
-    "serve-favicon": "~2.2.1"
+    "serve-favicon": "~2.2.1",
+    "meowvc": "github:info-infoman/meowvc"
   },
   "engines": {
     "node": "4.4.7"
