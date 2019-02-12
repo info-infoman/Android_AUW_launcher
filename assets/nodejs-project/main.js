@@ -1,13 +1,5 @@
 const path = require('path');
 var replace = require("replace");
-var Datastore = require('nedb');
-
-//load db
-db = {};
-//{"vtx":{"vin":{"nValue":0,"pubKey":"0","scriptSig":"0"}, "vout":{"nValue":0,"pubKey":"0"}, "txType":0, "feedback":"0", "url":"0", "token":"0", "tvalue":"0"}, "hashPrevBlock":"0", "hashMerkleRoot":"0", "hashAccountRoot":"0", "nVersion":1, "nHeight":0, "nTime":0, "nNonce":0, "_id":"0"}
-db.blocks = new Datastore({ filename: __dirname+'/db/blocks', autoload: true });
-db.trie = new Datastore({ filename: __dirname+'/db/trie', autoload: true });
-db.peers = new Datastore({ filename: __dirname+'/db/peers', autoload: true });
 
 //wws - web-wallet-server
 //node - full node of coin

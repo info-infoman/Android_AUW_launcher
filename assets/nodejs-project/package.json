@@ -13,11 +13,12 @@
     "express": "~4.12.4",
     "jade": "~1.9.2",
     "morgan": "~1.5.3",
-    "nedb": "^1.1.2",
     "path": "^0.12.7",
     "replace": "^1.0.1",
     "serve-favicon": "~2.2.1",
-    "meowvc": "github:info-infoman/meowvc"
+
+    "meowvc": "github:info-infoman/meowvc",
+    "XCN_Params": "github:info-infoman/XCN_Params"
   },
   "engines": {
     "node": "4.4.7"
