@@ -44,13 +44,13 @@ All we can do is stop loops, close sockets, update files and require cache.
 
 # we need module(work plan):
 0) The main module that will update and restart all the modules listed below based on the logic described above.
-1) bitcoin-net for connect to peer https://github.com/mappum/bitcoin-net and add some rule for xcn
+1) bitcoin-net for connect to peer https://github.com/info-infoman/bitcoin-net-XCN and add some rule for xcn
 2) blockchain-download  for load blockhead abd full blocks(for xcn last 10k) https://github.com/mappum/blockchain-download and add some rule for xcn
 3) blockchain-spv for check and load block to db https://github.com/mappum/blockchain-spv add some rule for xcn witch full blocks(for xcn last 10k)
 4) bitcoin-inventory for exchange tx https://github.com/mappum/bitcoin-inventory
 5) bitcoin-merkle-proof https://github.com/mappum/bitcoin-merkle-proof and create xcn-trie-proof
 6) add express server for local web-wallet 
-7) https://github.com/jzwood/meowvc - need test simle VCS for NodeJS
+7) https://github.com/info-infoman/Android_AUW_launcher/blob/master/auto_update.md - need test simle VCS for NodeJS
 
 All points need to check for autorestart witch scheme stop-remove require-close socket-start
 
