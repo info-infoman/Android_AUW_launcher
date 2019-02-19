@@ -19,6 +19,7 @@
 
     "meowvc": "github:info-infoman/meowvc",
     "XCN_Params": "github:info-infoman/XCN_Params"
+    "bitcoin-net-XCN": "github:info-infoman/bitcoin-net-XCN"
   },
   "engines": {
     "node": "4.4.7"
