@@ -7,6 +7,7 @@
     "start": "node main.js"
   },
   "dependencies": {
+    //web-wallet
     "body-parser": "~1.12.4",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
@@ -14,12 +15,16 @@
     "jade": "~1.9.2",
     "morgan": "~1.5.3",
     "path": "^0.12.7",
-    "replace": "^1.0.1",
     "serve-favicon": "~2.2.1",
-
+    
+    //git
     "meowvc": "github:info-infoman/meowvc",
-    "XCN_Params": "github:info-infoman/XCN_Params"
-    "bitcoin-net-XCN": "github:info-infoman/bitcoin-net-XCN"
+    //node
+    "XCN_Params": "github:info-infoman/XCN_Params",
+    "bitcoin-net-XCN": "github:info-infoman/bitcoin-net-XCN",
+    //todo:
+    "blockchain-download-XCN": "github:info-infoman/blockchain-download-XCN",
+    "blockchain-XCN": "github:info-infoman/blockchain-XCN"
   },
   "engines": {
     "node": "4.4.7"
