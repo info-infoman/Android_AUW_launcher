@@ -20,7 +20,7 @@
     /*git*/
     "meowvc": "github:info-infoman/meowvc",
     /*node*/
-    "XCN_Params": "github:info-infoman/XCN_Params",
+    "webcoin-XCN": "github:info-infoman/webcoin-XCN",
     "bitcoin-net-XCN": "github:info-infoman/bitcoin-net-XCN",
     /*todo*/
     "blockchain-download-XCN": "github:info-infoman/blockchain-download-XCN",
